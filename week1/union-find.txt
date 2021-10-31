@@ -1,0 +1,8 @@
+1, Quick-find
+    - Độ phức tạp hàm mũ => Thuật toán chậm
+
+2, Quick-union
+    - Cấu trúc dữ liệu:
+        + Mảng id[] với kích thước N
+        + id[i] là cha (parent) của i
+        + 

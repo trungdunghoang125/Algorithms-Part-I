@@ -1,8 +1,6 @@
 import edu.princeton.cs.algs4.StdIn;
-
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-import java.util.Scanner;
 
 public class Deque<Item> implements Iterable<Item> {
     private Item[] deque;
@@ -142,7 +140,7 @@ public class Deque<Item> implements Iterable<Item> {
         return item;
     }
 
-    public void display() {
+    private void display() {
         int i = front;
         while (i != rear) {
             System.out.println("deque[" + i + "] = " + deque[i]);
@@ -151,7 +149,7 @@ public class Deque<Item> implements Iterable<Item> {
         System.out.println("deque[" + rear + "] = " + deque[rear]);
     }
 
-    public void resize(int capacity) {
+    private void resize(int capacity) {
         Item[] copy = (Item[]) new Object[capacity];
         // loop to copy all element start with index = 0 in new array
         for (int i = 0; i < N; i++) {
